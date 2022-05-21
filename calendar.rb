@@ -1,6 +1,10 @@
 require 'date'
 
- # It is dangeraous to initialize array elements with a proc or a lambda, 
+    # calendar = Array.new(6, [' ',' ',' ',' ',' ',' ',' ']).each_with_index.reduce({}) do |cal, (arr,i)|
+    #     cal[i] = arr
+    #     cal
+    # end
+    # It is dangeraous to initialize array elements with a proc or a lambda, 
     # This is because they could act like a closure that share a base object
     # causing it to overwrite itselt
     # I need to do more reading into this
